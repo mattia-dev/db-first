@@ -1,0 +1,15 @@
+  
+table name: cars
+
+COLUMN              TYPE                    ATTRIBUTES                  INDEX
+
+id                  BIGINIT UNSIGNED        AUTO_INCREMENT, NOT NULL    PRIMARY_KEY
+brand               VARCHAR(255)            NOT NULL                    INDEX
+model               VARCHAR(255)            NOT NULL                    INDEX
+year_of_production  YEAR                    NOT NULL
+license_plate       VARCHAR(7)              NOT NULL, UNIQUE            INDEX
+kilometers          MEDIUMINT UNSIGNED      NOT NULL
+power_source        VARCHAR(255)            NOT NULL
+price               FLOAT(8,2)              NOT NULL
+seats               TINYINT UNSIGNED        NOT NULL
+car_description     TEXT                    NULL
